@@ -1,9 +1,19 @@
-import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="*"
+            element={<h1 className="text-8xl">404 Page Not Found</h1>}
+          />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
