@@ -1,5 +1,6 @@
 import Logo from "../assets/Pravidhi-logo.webp";
 import { Link } from "react-router-dom";
+import Button from "./UI/Button";
 
 const Hero = () => {
   return (
@@ -11,14 +12,14 @@ const Hero = () => {
             {/*  LEFT DIV LOGO  */}
             <Link
               to="/"
-              className="flex items-center gap-2 text-3xl text-[#0F172A] font-bold"
+              className="flex items-center gap-2 text-3xl text-text font-bold"
             >
               <img src={Logo} alt="Pravidhi logo" className="h-8 rounded-lg" />
               <span>Pravidhi</span>
             </Link>
 
             {/* MIDDLE LINKS  */}
-            <div className="hidden md:flex items-center gap-8 text-[#0F172A] text-sm md:text-xl font-medium">
+            <div className="hidden md:flex items-center gap-8 text-text text-sm md:text-xl font-medium">
               <Link to="/" className="hover:text-[#1D70B8] transition">
                 Home
               </Link>
@@ -35,11 +36,23 @@ const Hero = () => {
 
             {/* RIGHT DIV CTA BUTTON  */}
             <div className="flex items-center">
-              <button className="rounded-xl px-6">Get Started</button>
+              <Button className="bg-primary ">Get Started</Button>
             </div>
           </div>
         </div>
       </nav>
+      <div className="flex flex-col gap-8 mx my-40 px-50 justify-center">
+        <h1 className="text-6xl text-text">
+          Empowering Businesses and individuals through Digital Innovation{" "}
+        </h1>
+        <p className="">
+          The goal of IT services is to provide efficient and effective
+          technology solutions that help businesses achieve their objectives
+        </p>
+        <div className="flex items-center justify-center">
+          <Button className="bg-primary ">Get Started</Button>
+        </div>
+      </div>
     </div>
   );
 };

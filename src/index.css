@@ -11,11 +11,20 @@
 @theme {
   --font-body: "Inter", system-ui, sans-serif;
   --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  /* MAIN COLORS */
+  --color-primary: #1d70b8;
+  --color-secondary: #4a55a2;
+  --color-accent: #312e81;
+
+  --color-text: #0f172a;
 }
 
 @layer base {
   body {
     font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: #f8fafc;
   }
 
   h1,
