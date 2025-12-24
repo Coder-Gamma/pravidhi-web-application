@@ -11,7 +11,7 @@ export const Heading = ({ level = 1, children, className }: HeadingProps) => {
   const Tag = `h${level}` as const;
 
   const sizes = {
-    1: "text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl",
+    1: "text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl",
     2: "text-3xl font-bold tracking-tight md:text-4xl",
     3: "text-2xl font-semibold md:text-3xl",
     4: "text-xl font-semibold",
