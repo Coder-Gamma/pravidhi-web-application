@@ -25,11 +25,19 @@
   --color-primary-900: #103f6f;
   --color-primary-950: #0b284a;
 
+  /* SECONDARY COLOR  */
   --color-secondary: #4a55a2;
+
+  /* ACCENT COLOR  */
+
   --color-accent: #312e81;
 
+  /* TEXT COLOR  */
   --color-text: #0f172a;
-  /* --width-container:  */
+
+  /* CONTAINER WIDHT  */
+
+  --width-container: 80rem;
 }
 
 @layer base {
