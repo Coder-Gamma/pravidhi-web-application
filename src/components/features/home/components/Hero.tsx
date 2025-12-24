@@ -1,6 +1,8 @@
 import Logo from "../../../../assets/Pravidhi-logo.webp";
 import { Link } from "react-router-dom";
 import Button from "../../../UI/Button";
+import { Heading } from "@/components/UI/Heading";
+// import Button from "@/components/UI/Button";
 
 const Hero = () => {
   return (
@@ -46,15 +48,18 @@ const Hero = () => {
         </div>
       </nav>
       <div className="flex flex-col gap-8 mx my-40 px-50 justify-center">
-        <h1 className="text-6xl text-text">
+        {/* <h1 className="text-6xl text-text">
           Empowering Businesses and individuals through Digital Innovation{" "}
-        </h1>
+        </h1> */}
+        <Heading>
+          Empowering Businesses and individuals through Digital Innovation
+        </Heading>
         <p className="">
           The goal of IT services is to provide efficient and effective
           technology solutions that help businesses achieve their objectives
         </p>
         <div className="flex items-center justify-center">
-          <Button className="bg-primary ">Get Started</Button>
+          <Button className="">Get Started</Button>
         </div>
       </div>
     </div>
