@@ -1,13 +1,13 @@
-import Logo from "../assets/Pravidhi-logo.webp";
+import Logo from "../../../../assets/Pravidhi-logo.webp";
 import { Link } from "react-router-dom";
-import Button from "./UI/Button";
+import Button from "../../../UI/Button";
 
 const Hero = () => {
   return (
     <div className="bg-[#f8fafc] h-screen w-full">
       {/* NAVIGATION START */}
-      <nav className="sticky top-0 z-50 ">
-        <div className="max-w-8xl  px-6">
+      <nav className="sticky top-0 z-50  ">
+        <div className="max-w-8xl mx-auto px-6">
           <div className="flex items-center h-16 justify-between">
             {/*  LEFT DIV LOGO  */}
             <Link
@@ -15,16 +15,20 @@ const Hero = () => {
               className="flex items-center gap-2 text-3xl text-text font-bold"
             >
               <img src={Logo} alt="Pravidhi logo" className="h-8 rounded-lg" />
-              <span>Pravidhi</span>
+              <span className="font-heading font-normal">Pravidhi</span>
             </Link>
 
             {/* MIDDLE LINKS  */}
-            <div className="hidden md:flex items-center gap-8 text-text text-sm md:text-xl font-medium">
+            <div className="hidden md:flex items-center gap-10 text-text text-sm md:text-xl font-medium">
               <Link to="/" className="hover:text-[#1D70B8] transition">
                 Home
               </Link>
+
               <Link to="/" className="hover:text-[#1D70B8] transition">
                 About Us
+              </Link>
+              <Link to="/" className="hover:text-[#1D70B8] transition">
+                Services
               </Link>
               <Link to="/" className="hover:text-[#1D70B8] transition">
                 Blog
