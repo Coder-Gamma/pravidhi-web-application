@@ -1,69 +1,43 @@
-import Logo from "../../../../assets/Pravidhi-logo.webp";
-import { Link } from "react-router-dom";
-import { Button } from "../../../UI/Button";
+import { Button } from "@/components/UI/Button";
 import { Heading } from "@/components/UI/Heading";
-// import Button from "@/components/UI/Button";
+import { Section } from "@/components/UI/Section";
+import { ArrowRight, Sparkles } from "lucide-react";
 
-const Hero = () => {
+export const Hero = () => {
   return (
-    <div className="bg-[#f8fafc] h-screen w-full">
-      {/* NAVIGATION START */}
-      <nav className="sticky top-0 z-50  ">
-        <div className="max-w-8xl mx-auto px-6">
-          <div className="flex items-center h-16 justify-between">
-            {/*  LEFT DIV LOGO  */}
-            <Link
-              to="/"
-              className="flex items-center gap-2 text-3xl text-text font-bold"
-            >
-              <img src={Logo} alt="Pravidhi logo" className="h-8 rounded-lg" />
-              <span className="font-heading font-normal">Pravidhi</span>
-            </Link>
+    <Section
+      background="muted"
+      className="relative overflow-hidden pt-32 pb-20 md:pt-48 md:pb-32"
+    >
+      {/* Optional: Subtle Background Decoration */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,var(--color-brand-accent)_0%,transparent_15%)] opacity-10 pointer-events-none" />
 
-            {/* MIDDLE LINKS  */}
-            <div className="hidden md:flex items-center gap-10 text-text text-sm md:text-xl font-medium">
-              <Link to="/" className="hover:text-[#1D70B8] transition">
-                Home
-              </Link>
-
-              <Link to="/" className="hover:text-[#1D70B8] transition">
-                About Us
-              </Link>
-              <Link to="/" className="hover:text-[#1D70B8] transition">
-                Services
-              </Link>
-              <Link to="/" className="hover:text-[#1D70B8] transition">
-                Blog
-              </Link>
-              <Link to="/" className="hover:text-[#1D70B8] transition">
-                Contact
-              </Link>
-            </div>
-
-            {/* RIGHT DIV CTA BUTTON  */}
-            <div className="flex items-center">
-              <Button className="">Get Started</Button>
-            </div>
-          </div>
+      <div className="flex flex-col items-center text-center">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold uppercase tracking-wider mb-6">
+          <Sparkles size={14} />
+          <span>Next Generation Web Solutions</span>
         </div>
-      </nav>
-      <div className="flex flex-col gap-8 mx my-40 px-50 justify-center">
-        {/* <h1 className="text-6xl text-text">
-          Empowering Businesses and individuals through Digital Innovation{" "}
-        </h1> */}
-        <Heading>
-          Empowering Businesses and individuals through Digital Innovation
+
+        <Heading level={1} className="max-w-4xl">
+          Empowering Businesses with{" "}
+          <span className="text-(--color-brand-accent)">Modern Technology</span>
         </Heading>
-        <p className="">
-          The goal of IT services is to provide efficient and effective
-          technology solutions that help businesses achieve their objectives
+
+        <p className="mt-6 max-w-2xl text-lg md:text-xl text-(--color-brand-muted) leading-relaxed">
+          Pravidhi delivers high-performance web applications tailored to your
+          brand's growth. Fast, responsive, and ready for the future.
         </p>
-        <div className="flex items-center justify-center">
-          <Button className="" isLoading>Get Started</Button>
+
+        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <Button size="lg" className="gap-2">
+            Get Quote <ArrowRight size={18} />
+          </Button>
+          <Button variant="outline" size="lg">
+            View Our Work
+          </Button>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
-
-export default Hero;

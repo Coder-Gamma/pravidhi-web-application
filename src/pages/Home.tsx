@@ -1,10 +1,11 @@
-import Hero from "../components/features/home/components/Hero";
+import { Hero } from "@/components/features/home/components/Hero";
+import { RootLayout } from "@/layouts/RootLayout";
 
 const Home = () => {
   return (
-    <div>
+    <RootLayout>
       <Hero />
-    </div>
+    </RootLayout>
   );
 };
 
