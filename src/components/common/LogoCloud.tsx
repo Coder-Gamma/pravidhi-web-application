@@ -37,9 +37,9 @@ const LOGOS = [
 const LogoCloud = () => {
   return (
     <div className="w-full mt-8">
-      <p className="">Trusted By:</p>
+      <p className=" text-center font-heading ">Trusted By:</p>
 
-      <div className="relative mt-8 overflow-hidden mask-[linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
+      <div className="relative mt-8 pause-on-hover overflow-hidden mask-[linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
         {/* SCROLLING CONTAINER */}
         <div className="flex w-[200%] animate-logo-scroll gap-14 items-center py-4">
           {[...LOGOS, ...LOGOS].map((logo, index) => (
@@ -50,7 +50,7 @@ const LogoCloud = () => {
               <img
                 src={logo.src}
                 alt={`${logo.name} logo`}
-                className="h-8 w-auto object-contain opacity-50 grayscale transition-all hover:grayscale-0 hover:opacity-100  "
+                className="h-10 w-auto object-contain opacity-50 grayscale transition-all hover:grayscale-0 hover:opacity-100 hover:scale-105  "
               />
             </div>
           ))}

@@ -53,6 +53,9 @@
 .animate-logo-scroll {
   animation: logo-scroll 60s linear infinite;
 }
+.pause-on-hover:hover .animate-logo-scroll {
+  animation-play-state: paused;
+}
 
 @layer base {
   body {
