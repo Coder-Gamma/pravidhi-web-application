@@ -38,6 +38,20 @@
   /* CONTAINER WIDHT  */
 
   --width-container: 80rem;
+
+  /* LOGO SCROLL ANIMATION */
+  @keyframes logo-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.animate-logo-scroll {
+  animation: logo-scroll 60s linear infinite;
 }
 
 @layer base {

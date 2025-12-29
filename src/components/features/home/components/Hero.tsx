@@ -1,3 +1,4 @@
+import LogoCloud from "@/components/common/LogoCloud";
 import { Button } from "@/components/UI/Button";
 import { Heading } from "@/components/UI/Heading";
 import { Section } from "@/components/UI/Section";
@@ -37,6 +38,8 @@ export const Hero = () => {
             View Our Work
           </Button>
         </div>
+
+        <LogoCloud />
       </div>
     </Section>
   );
