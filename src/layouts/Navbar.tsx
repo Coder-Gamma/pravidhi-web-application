@@ -13,7 +13,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full  bg-[f8fafc] backdrop-blur-md">
+    <nav className="sticky top-0 z-50 w-full  bg-[f8f8f8] backdrop-blur-md">
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* LOGO */}

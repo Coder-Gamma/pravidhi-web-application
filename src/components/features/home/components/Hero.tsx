@@ -3,10 +3,15 @@ import { Button } from "@/components/UI/Button";
 import { Heading } from "@/components/UI/Heading";
 import { Section } from "@/components/UI/Section";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { cn } from "../lib/utils";
 
 export const Hero = () => {
   return (
-    <Section background="muted" padding="hero" className="relative overflow-hidden">
+    <Section
+      background="muted"
+      padding="hero"
+      className="relative overflow-hidden"
+    >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full  opacity-10 pointer-events-none" />
 
       <div className="flex flex-col items-center text-center">

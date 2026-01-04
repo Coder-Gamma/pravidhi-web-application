@@ -27,7 +27,7 @@ export const Section = ({
 
   const paddingStyles = {
     default: "py-16 md:py-24 lg:py-32",
-    hero: "pt-10 pb-10 md:pt-16 md:pb-12",
+    hero: "pt-16 pb-16 md:pt-16 md:pb-12",
     none: "",
   };
   return (
