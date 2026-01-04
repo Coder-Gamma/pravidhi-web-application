@@ -19,12 +19,13 @@ export const ServiceCard = ({
     <div
       className={cn(
         "group relative flex flex-col items-start p-8 rounded-3xl transition-all duration-300",
-        "bg-slate-900/40 border-slate-800 hover:border-accent/50",
+        "bg-primary-950/40 border-primary-800/50 border hover:border-primary-400",
+        "hover:shadow-[0_0_40px_-15px_rgba(29,112,184,0.3)]",
         className
       )}
     >
       {/* ICONS  */}
-      <div className="rounded-xl bg-slate-800 mb-6 p-3 text-accent transition-colors group-hover:bg-accent group-hover:text-white">
+      <div className="rounded-xl bg-primary-950/50 mb-6 p-3 text-primary-300 transition-colors group-hover:scale-105 group-hover:bg-primary-500 group-hover:text-white">
         <Icon size={28} strokeWidth={1.5} />
       </div>
 
@@ -32,7 +33,7 @@ export const ServiceCard = ({
         {title}
       </h3>
 
-      <p className="text-slate-400 leading-relaxed text-sm lg:text-base">
+      <p className="text-primary-100/70 leading-relaxed text-sm lg:text-base">
         {description}
       </p>
     </div>

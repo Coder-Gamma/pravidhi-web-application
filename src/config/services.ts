@@ -1,4 +1,12 @@
-import { Globe, Smartphone, Code2, Briefcase, Truck } from "lucide-react";
+import {
+  Globe,
+  Smartphone,
+  Code2,
+  Handshake,
+  Truck,
+  ShieldCheck,
+  LineChart,
+} from "lucide-react";
 
 export const SERVICES_DATA = [
   {
@@ -22,12 +30,24 @@ export const SERVICES_DATA = [
     title: "IT Consulting",
     description:
       "Our manager Mr.Bishal sir is the best consultant you will find all over the valley. Don't miss out.",
-    icon: Briefcase,
+    icon: Handshake,
   },
   {
     title: "International Courier",
     description:
       "Need to send your long distance girlfriend a letter ? a gift ? No worries! We got you covered.",
     icon: Truck,
+  },
+  {
+    title: "Security & Compliance",
+    description:
+      "Robust security practices, audits, and compliance strategies to protect data and ensure trust.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Data & Analytics",
+    description:
+      "Transforming raw data into actionable insights through dashboards, analytics, and intelligent reporting.",
+    icon: LineChart,
   },
 ];

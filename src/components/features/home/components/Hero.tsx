@@ -10,7 +10,7 @@ export const Hero = () => {
     <Section
       background="muted"
       padding="hero"
-      className="relative overflow-hidden"
+      className="relative overflow-hidden h-screen"
     >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full  opacity-10 pointer-events-none" />
 
@@ -23,7 +23,7 @@ export const Hero = () => {
 
         <Heading level={1} className="max-w-4xl">
           Empowering Businesses with{" "}
-          <span className="text-accent">Modern Technology</span>
+          <span className="">Modern Technology</span>
         </Heading>
 
         <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted leading-relaxed">
