@@ -5,12 +5,16 @@ import { SERVICES_DATA } from "@/config/services"; // Import here
 
 export const Services = () => {
   return (
-    <Section background="primary" id="services" className="bg-primary-950 overflow-hidden relative">
+    <Section
+      background="primary"
+      id="services"
+      className="bg-slate-50 relative"
+    >
       <div className="text-center mb-16 space-y-4">
-        <Heading level={2} className="text-white">
+        <Heading level={2} className="text-slate-900">
           Innovative Solutions for Your Success
         </Heading>
-        <p className="max-w-2xl mx-auto text-slate-400">
+        <p className="max-w-2xl mx-auto text-slate-600 text-lg">
           Discover how we build trust with our clients through reliable
           services...
         </p>
