@@ -6,12 +6,8 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <Section
-      background="muted"
-      className="relative overflow-hidden pt-32 pb-20 md:pt-48 md:pb-32"
-    >
-      {/* Optional: Subtle Background Decoration */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,var(--color-brand-accent)_0%,transparent_15%)] opacity-10 pointer-events-none" />
+    <Section background="muted" padding="hero" className="relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full  opacity-10 pointer-events-none" />
 
       <div className="flex flex-col items-center text-center">
         {/* Badge */}
@@ -22,10 +18,10 @@ export const Hero = () => {
 
         <Heading level={1} className="max-w-4xl">
           Empowering Businesses with{" "}
-          <span className="text-(--color-brand-accent)">Modern Technology</span>
+          <span className="text-accent">Modern Technology</span>
         </Heading>
 
-        <p className="mt-6 max-w-2xl text-lg md:text-xl text-(--color-brand-muted) leading-relaxed">
+        <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted leading-relaxed">
           Pravidhi delivers high-performance web applications tailored to your
           brand's growth. Fast, responsive, and ready for the future.
         </p>

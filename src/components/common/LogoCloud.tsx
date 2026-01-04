@@ -1,8 +1,8 @@
 import adidasLogo from "@/assets/logos/adidas-8.svg";
-import linkedinLogo from "@/assets/logos/linkedin-icon-2.svg";
+import ytLogo from "@/assets/logos/new-youtube-logo.svg";
 import netflixLogo from "@/assets/logos/netflix-3.svg";
-import notionLogo from "@/assets/logos/notion-2.svg";
 import yamahaLogo from "@/assets/logos/yamaha-purple.svg";
+import cocacolaLogo from "@/assets/logos/coca-cola-2021.svg";
 
 // import { cn } from "@/lib/utils";
 
@@ -14,8 +14,8 @@ const LOGOS = [
   },
   {
     id: 2,
-    name: "Linkedin",
-    src: linkedinLogo,
+    name: "Youtube",
+    src: ytLogo,
   },
   {
     id: 3,
@@ -24,8 +24,8 @@ const LOGOS = [
   },
   {
     id: 4,
-    name: "Notion",
-    src: notionLogo,
+    name: "Coca-Cola",
+    src: cocacolaLogo,
   },
   {
     id: 5,
@@ -36,7 +36,7 @@ const LOGOS = [
 
 const LogoCloud = () => {
   return (
-    <div className="w-full mt-8">
+    <div className="w-full mt-12">
       <p className=" text-center font-heading ">Trusted By:</p>
 
       <div className="relative mt-8 pause-on-hover overflow-hidden mask-[linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">

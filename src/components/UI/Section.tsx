@@ -8,6 +8,7 @@ interface SectionProps {
   id?: string;
   innerClassName?: string;
   background?: "white" | "muted" | "primary";
+  padding?: "default" | "hero" | "none";
 }
 
 export const Section = ({
@@ -16,16 +17,23 @@ export const Section = ({
   id,
   innerClassName,
   background = "white",
+  padding = "default",
 }: SectionProps) => {
   const bgStyles = {
     white: "bg-[#f8fafc]",
     muted: "bg-slate-50",
     primary: "bg-primary text-white",
   };
+
+  const paddingStyles = {
+    default: "py-16 md:py-24 lg:py-32",
+    hero: "pt-10 pb-10 md:pt-16 md:pb-12",
+    none: "",
+  };
   return (
     <section
       id={id}
-      className={cn("py-16 md:py-24 lg:py-32", bgStyles[background], className)}
+      className={cn(bgStyles[background], paddingStyles[padding], className)}
     >
       <Container className={innerClassName}>{children}</Container>
     </section>
