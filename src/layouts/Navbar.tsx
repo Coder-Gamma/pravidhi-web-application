@@ -22,11 +22,12 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 w-full  transition-all duration-300  backdrop-blur-sm  bg-slate/85 ${
+      className={cn(
+        "sticky top-0 z-50 w-full transition-all duration-300 backdrop-blur-sm bg-slate/85",
         scrolled
-          ? " border-b  border-white/5 shadow-[0_1px_8px_rgba(0,0,0,0.2)]"
-          : "shadow-none border-transparent"
-      }`}
+          ? "border-b border-white/10 shadow-[0_6px_16px_-12px_rgba(0,0,0,0.35)] "
+          : "border-transparent border-b shadow-none"
+      )}
     >
       <Container>
         <div className="flex h-16 items-center justify-between">
@@ -40,7 +41,7 @@ export const Navbar = () => {
               alt="Pravidhi logo"
               className="h-10 w-auto rounded-lg"
             />
-            <span className="font-heading text-2xl font-bold tracking-tight text-primary)">
+            <span className="font-heading text-2xl font-bold tracking-tight text-primary">
               Pravidhi
             </span>
           </Link>

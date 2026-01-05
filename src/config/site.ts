@@ -1,3 +1,4 @@
+import { Icons } from "@/components/UI/Icons";
 export const navLinks = [
   {
     name: "Home",
@@ -5,18 +6,31 @@ export const navLinks = [
   },
   {
     name: "Services",
-    href: "/#",
+    href: "/services",
   },
   {
     name: "Blog",
-    href: "/#",
+    href: "/blog",
   },
   {
     name: "About Us",
-    href: "/#",
+    href: "/about",
   },
   {
     name: "Contact",
-    href: "/#",
+    href: "/contact",
   },
 ];
+
+export const footerLinks = {
+  resources: [
+    { name: "Documentation", href: "/docs" },
+    { name: "Help Center", href: "/help" },
+    { name: "Privacy Policy", href: "/privacy" },
+  ],
+  social: [
+    { name: "Facebook", href: "https://facebook.com", icon: Icons.facebook },
+    { name: "GitHub", href: "https://github.com", icon: Icons.github },
+    { name: "LinkedIn", href: "https://linkedin.com", icon: Icons.linkedin },
+  ],
+};

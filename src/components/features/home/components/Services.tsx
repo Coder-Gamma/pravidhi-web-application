@@ -8,7 +8,7 @@ export const Services = () => {
     <Section
       background="primary"
       id="services"
-      className="bg-slate-100 relative"
+      className="bg-slate-50 relative"
       padding="hero"
     >
       <div className="text-center mb-16 space-y-4">
