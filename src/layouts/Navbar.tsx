@@ -1,21 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronRight } from "lucide-react";
 import Logo from "../assets/Pravidhi-logo.webp";
 import { Button } from "../components/UI/Button";
 import { Container } from "../components/UI/Container";
 import { cn } from "../lib/utils";
-
-// IMPORT the links we already defined!
 import { navLinks } from "../config/site";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="sticky top-0 z-50 w-full  bg-[f8f8f8] backdrop-blur-md">
+    <nav
+      className={`sticky top-0 z-50 w-full  transition-all duration-300  backdrop-blur-sm  bg-slate/85 ${
+        scrolled
+          ? " border-b  border-white/5 shadow-[0_1px_8px_rgba(0,0,0,0.2)]"
+          : "shadow-none border-transparent"
+      }`}
+    >
       <Container>
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-16 items-center justify-between">
           {/* LOGO */}
           <Link
             to="/"

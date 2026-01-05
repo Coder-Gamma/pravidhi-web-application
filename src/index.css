@@ -53,7 +53,7 @@
 }
 
 .animate-logo-scroll {
-  animation: logo-scroll 60s linear infinite;
+  animation: logo-scroll 45s linear infinite;
 }
 .pause-on-hover:hover .animate-logo-scroll {
   animation-play-state: paused;
