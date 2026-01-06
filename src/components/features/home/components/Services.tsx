@@ -6,9 +6,9 @@ import { SERVICES_DATA } from "@/config/services"; // Import here
 export const Services = () => {
   return (
     <Section
-      background="primary"
+      background="muted"
       id="services"
-      className="bg-slate-50 relative"
+      className="relative"
       padding="hero"
     >
       <div className="text-center mb-16 space-y-4">
@@ -23,7 +23,7 @@ export const Services = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {SERVICES_DATA.map((service, index) => (
           <ServiceCard
             key={index}

@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 100);
+      setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,9 +23,9 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300 backdrop-blur-sm bg-slate/85",
+        "sticky top-0 z-50 w-full transition-all duration-300 bg-slate-50",
         scrolled
-          ? "border-b border-white/10 shadow-[0_6px_16px_-12px_rgba(0,0,0,0.35)] "
+          ? "border-b border-accent/10 shadow-[0_8px_24px_-16px_rgba(0,0,0,0.35)] "
           : "border-transparent border-b shadow-none"
       )}
     >

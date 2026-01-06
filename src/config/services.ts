@@ -5,7 +5,6 @@ import {
   Handshake,
   Truck,
   ShieldCheck,
-  LineChart,
 } from "lucide-react";
 
 export const SERVICES_DATA = [
@@ -43,11 +42,5 @@ export const SERVICES_DATA = [
     description:
       "Robust security practices, audits, and compliance strategies to protect data and ensure trust.",
     icon: ShieldCheck,
-  },
-  {
-    title: "Data & Analytics",
-    description:
-      "Transforming raw data into actionable insights through dashboards, analytics, and intelligent reporting.",
-    icon: LineChart,
   },
 ];

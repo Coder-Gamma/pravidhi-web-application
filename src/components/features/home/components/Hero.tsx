@@ -22,7 +22,7 @@ export const Hero = () => {
         </div>
 
         <Heading level={1} className="max-w-4xl">
-          Empowering Businesses with <span className="">Modern Technology</span>
+          Empowering Businesses with <span className="text-primary">Modern Technology</span>
         </Heading>
 
         <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted leading-relaxed">
