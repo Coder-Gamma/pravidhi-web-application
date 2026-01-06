@@ -31,4 +31,24 @@ export const TEST_BLOGS: Blog[] = [
     author: "Pravidhi Team",
     date: "Dec 05, 2024",
   },
+  {
+    id: "4",
+    title: "UI/UX Principles for Developers",
+    description:
+      "Don't just code; design. Learn the fundamental principles that make an interface feel intuitive and premium.",
+    image:
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800",
+    author: "Design Lead",
+    date: "Dec 12, 2024",
+  },
+  {
+    id: "5",
+    title: "Optimizing Vite Builds",
+    description:
+      "Speed up your development workflow and production builds with these advanced Vite configuration tips.",
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+    author: "Pravidhi Team",
+    date: "Jan 02, 2025",
+  },
 ];
