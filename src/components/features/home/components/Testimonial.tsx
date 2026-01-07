@@ -1,6 +1,6 @@
 import { Heading } from "@/components/UI/Heading";
 import { Section } from "@/components/UI/Section";
-import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 interface Testimonial {
@@ -57,60 +57,75 @@ const Testimonial = () => {
     setActiveIndex((prev) => (prev + 1) % TESTIMONIALS.length);
   const handlePrev = () =>
     setActiveIndex(
-      (prev) => prev - 1 + (TESTIMONIALS.length % TESTIMONIALS.length)
+      (prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length
     );
   return (
-    <Section background="muted">
-      <div className="grid grid=cols-2">
-        {/* LEFT KO DIV */}
-        <div className="flex flex-col">
-          <Heading level={1}>
-            From our <span>Community</span>
-          </Heading>
-          <p>
-            Here's what customers have to say about Pravidhi Digital Innovations
-            Nepal Pvt Ltd
-          </p>
-          <div className="flex">
-            <button onClick={handlePrev}>
-              <CircleArrowLeft />
-            </button>
-            <button onClick={handleNext}>
-              <CircleArrowRight />
-            </button>
-          </div>
-        </div>
+    <Section background="muted" padding="hero">
+      <div className="mx-auto max-w-6xl border-t border-slate-300 pt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center ">
+          {/* LEFT KO DIV */}
+          <div className="flex flex-col gap-6 text-center lg:text-left ">
+            <Heading level={1} className="font-normal">
+              From our <span className="font-semibold">Customers</span>
+            </Heading>
 
-        {/* RIGHT KO DIV */}
-        <div>
-          {/* QUATION  MARK */}
-          <div className="relative">
-            <span className="absolute">“</span>
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed ">
+              Here's what customers have to say about Pravidhi Digital
+              Innovations Nepal Pvt Ltd
+            </p>
+
+            <div className="flex justify-center lg:justify-start mt-4 gap-4">
+              <button
+                onClick={handlePrev}
+                className="p-2 rounded-full border border-slate-300 hover:border-accent hover:text-accent transition"
+              >
+                <ArrowLeft size={36} strokeWidth={1} />
+              </button>
+              <button
+                onClick={handleNext}
+                className=" p-2 rounded-full border border-slate-300 hover:border-accent hover:text-accent transition"
+              >
+                <ArrowRight
+                  size={36}
+                  strokeWidth={1}
+                  className=" hover:text-accent group-hover:scale-105 "
+                />
+              </button>
+            </div>
           </div>
 
-          {/* actual quote  */}
-          <div>
-            <p>{current.quote}</p>
-          </div>
+          {/* RIGHT KO DIV */}
+          <div className="relative bg-background/70 backdrop-blur-md border border-slate-200 rounded-2xl p-8 sm:p-10 shadow-sm">
+            {/* QUATION  MARK */}
+            <span className="absolute top-3 left-3 text-7xl font-serif text-accent/20">
+              “
+            </span>
 
-          <div className="flex">
-            <div>
+            {/* actual quote  */}
+
+            <p className="text-lg sm:text-xl font-medium leading-relaxed tracking-wide">
+              {current.quote}
+            </p>
+
+            <div className="mt-8 flex gap-4 items-center">
               <img
                 src={current.image}
                 alt={current.author}
-                className="w-full h-full object-cover"
+                className="h-16 w-16 rounded-[50%] object-cover"
               />
-            </div>
 
-            {/* Author text details div */}
+              {/* Author text details div */}
 
-            <div className="flex">
-              <Heading level={4}>{current.author}</Heading>
-              <p>{current.role}</p>
+              <div>
+                <Heading className="text-accent leading-none" level={4}>
+                  {current.author}
+                </Heading>
+                <p className="text-sm mt-1 text-muted">{current.role}</p>
+              </div>
             </div>
-          </div>
-          <div>
-            <p></p>
+            <div>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>

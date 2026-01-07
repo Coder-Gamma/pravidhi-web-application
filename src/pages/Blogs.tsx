@@ -12,7 +12,7 @@ export const Blogs = () => {
         padding="hero"
         className="border-b border-slate-200 "
       >
-        <div className="max-w-2xl">
+        <div className="max-w-2xl ">
           <Heading level={1} className="text-4xl md:text-5xl">
             Our Blog
           </Heading>

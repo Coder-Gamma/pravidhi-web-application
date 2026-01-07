@@ -9,7 +9,7 @@ export const Blog = () => {
   const featuredBlogs = TEST_BLOGS.slice(0, 3);
   return (
     <div>
-      <Section id="Blogs" background="muted">
+      <Section id="Blogs" background="muted" padding="hero">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:items-end ">
           <div className="text-center md:text-left">
             <Heading level={3}>Latest Insights</Heading>
