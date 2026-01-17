@@ -18,14 +18,15 @@ const teamMembers: TeamMember[] = [
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     image:
-      "https://unsplash.com/photos/a-man-in-glasses-smiles-for-the-camera-dtTtVicOXqE",
+      "https://headshots-inc.com/wp-content/uploads/2020/11/Professional-Headshot-Poses-Blog-Post.jpg",
   },
   {
     id: 2,
     name: "Bishal Adhikari",
     role: "HR Manager",
     description: "Lead engineering teams at Netflix, Pitch, and Protocol Labs.",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=512&auto=format&fit=crop",
+    image:
+      "https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=",
   },
   {
     id: 3,
@@ -33,77 +34,120 @@ const teamMembers: TeamMember[] = [
     role: "Product Designer",
     description:
       "Founding design team at Figma. Former Pleo, Stripe, and Tile.",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=512&auto=format&fit=crop",
+    image:
+      "https://img.freepik.com/free-photo/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space_23-2148767055.jpg?semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 4,
     name: "Owen Garcia",
     role: "Frontend Developer",
     description: "Former frontend dev for Linear, Coinbase, and Postscript.",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=512&auto=format&fit=crop",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&s",
   },
   {
     id: 5,
     name: "Lulu Meyers",
     role: "Product Manager",
     description: "",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=512&auto=format&fit=crop",
+    image:
+      "https://headshots-inc.com/wp-content/uploads/2020/11/Professional-Headshot-Poses-Blog-Post.jpg",
   },
   {
     id: 6,
     name: "Orlando Diggs",
     role: "Backend Developer",
     description: "",
-    image: "/path/to/image6.jpg",
+    image:
+      "https://headshots-inc.com/wp-content/uploads/2020/11/Professional-Headshot-Poses-Blog-Post.jpg",
   },
- 
 ];
 
 const About: React.FC = () => {
   return (
-    <Section padding="hero" className=" ">
-      <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
-        <div className="text-center mb-12">
-          <Heading level={2} className="text-text mb-4">
-            We are the people who make up Pravidhi Digital Innovation Pvt Ltd
-          </Heading>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our philosophy is simple — hire great people and give them the
-            resources and support to do their best work.
-          </p>
+    <>
+      <Section padding="hero">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left Section  */}
+          <div className="space-y-6">
+            <p className="text-accent text-sm font-medium tracking-wide uppercase">
+              // ABOUT PRAVIDHI
+            </p>
+            <Heading level={2} className=" leading-tight max-w-md">
+              Innovative full-service AI & Marketing Agency for Business Growth
+            </Heading>
+          </div>
+
+          {/* Right Section - Mission */}
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
+            <p className="text-muted text-lg leading-relaxed">
+              At Pravidhi Digital, we blend creativity, strategy, and AI
+              innovation to fuel your brand's growth. From powerful marketing
+              campaigns to intelligent digital solutions, we help you stand out,
+              scale faster, and win in today's competitive world. Your success
+              isn't just our goal—it's our obsession.
+            </p>
+          </div>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {teamMembers.map((member) => (
-            <div key={member.id} className="flex flex-col">
-              {/* Image Container */}
-              <div className="aspect-square bg-slate-500 rounded-lg mb-4 overflow-hidden">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Member Info */}
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-sm text-primary font-medium mb-2">
-                  {member.role}
-                </p>
-                {member.description && (
-                  <p className="text-sm text-gray-600">{member.description}</p>
-                )}
-              </div>
-            </div>
-          ))}
+        {/* Team Image Section */}
+        <div className="mt-16">
+          <div className="rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+              alt="Team collaboration at Pravidhi Digital Innovation"
+              className="w-full h-125 object-cover"
+            />
+          </div>
         </div>
-      </div>
-    </Section>
+      </Section>
+      <Section padding="hero" className=" ">
+        <div className="">
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <Heading level={2} className="text-text mb-4">
+              We are the people who make up Pravidhi 
+            </Heading>
+            <p className="text-lg text-muted max-w-2xl mx-auto">
+              Our philosophy is simple — hire great people and give them the
+              resources and support to do their best work.
+            </p>
+          </div>
+
+          {/* Team Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            {teamMembers.map((member) => (
+              <div key={member.id} className="flex flex-col">
+                {/* Image Container */}
+                <div className="aspect-square bg-slate-500 rounded-full mb-4 overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Member Info */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-primary font-medium mb-2">
+                    {member.role}
+                  </p>
+                  {member.description && (
+                    <p className="text-sm text-muted">
+                      {member.description}
+                    </p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+    </>
   );
 };
 

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronRight } from "lucide-react";
 import Logo from "../assets/Pravidhi-logo.webp";
-import { Button } from "../components/UI/Button";
 import { Container } from "../components/UI/Container";
 import { cn } from "../lib/utils";
 import { navLinks } from "../config/site";
@@ -26,7 +25,7 @@ export const Navbar = () => {
         "sticky top-0 z-50 w-full transition-all duration-300 bg-slate-50",
         scrolled
           ? "border-b border-accent/10 shadow-[0_8px_24px_-16px_rgba(0,0,0,0.35)] "
-          : "border-transparent border-b shadow-none"
+          : "border-transparent border-b shadow-none",
       )}
     >
       <Container>
@@ -57,9 +56,17 @@ export const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button size="sm" className="ml-4">
-              Get Started
-            </Button>
+            {/* <Button onClick={} size="sm" className="ml-4">
+              Get in Touch
+            </Button> */}
+            <Link
+              to="/contact"
+              className="h-9 px-3 text-xs bg-primary text-white hover:bg-primary-700 shadow-sm
+              inline-flex items-center justify-center rounded-md font-medium transition-all focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-95 
+   disabled:pointer-events-none disabled:opacity-50 cursor-pointer"
+            >
+              Get in Touch
+            </Link>
           </div>
 
           {/* MOBILE TOGGLE */}
@@ -77,7 +84,7 @@ export const Navbar = () => {
             "absolute inset-x-0 top-20 bg-white border-b border-slate-200 p-6 transition-all duration-300 md:hidden",
             isOpen
               ? "opacity-100 translate-y-0"
-              : "opacity-0 -translate-y-4 pointer-events-none"
+              : "opacity-0 -translate-y-4 pointer-events-none",
           )}
         >
           <div className="flex flex-col gap-5">
