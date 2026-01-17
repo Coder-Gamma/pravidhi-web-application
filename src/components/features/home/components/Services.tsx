@@ -1,7 +1,7 @@
 import { Section } from "@/components/UI/Section";
 import { Heading } from "@/components/UI/Heading";
 import { ServiceCard } from "@/components/UI/ServiceCard";
-import { SERVICES_DATA } from "@/config/services"; // Import here
+import { SERVICES_DATA } from "@/config/services";
 
 export const Services = () => {
   return (
@@ -25,10 +25,7 @@ export const Services = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {SERVICES_DATA.map((service, index) => (
-          <ServiceCard
-            key={index}
-            {...service} // Using spread operator for cleaner code
-          />
+          <ServiceCard key={index} {...service} />
         ))}
       </div>
     </Section>

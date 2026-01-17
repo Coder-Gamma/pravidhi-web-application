@@ -20,7 +20,7 @@ export const Heading = ({ level = 1, children, className }: HeadingProps) => {
   };
 
   return (
-    <Tag className={cn(sizes[level], "text-brand-primary", className)}>
+    <Tag className={cn(sizes[level], "text-text", className)}>
       {children}
     </Tag>
   );
