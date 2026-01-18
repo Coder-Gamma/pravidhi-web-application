@@ -67,47 +67,34 @@ const About: React.FC = () => {
   return (
     <>
       <Section padding="hero">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Left Section  */}
-          <div className="space-y-6">
-            <p className="text-accent text-sm font-medium tracking-wide uppercase">
-              // ABOUT PRAVIDHI
-            </p>
-            <Heading level={2} className=" leading-tight max-w-md">
-              Innovative full-service AI & Marketing Agency for Business Growth
-            </Heading>
-          </div>
-
-          {/* Right Section - Mission */}
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
-            <p className="text-muted text-lg leading-relaxed">
-              At Pravidhi Digital, we blend creativity, strategy, and AI
-              innovation to fuel your brand's growth. From powerful marketing
-              campaigns to intelligent digital solutions, we help you stand out,
-              scale faster, and win in today's competitive world. Your success
-              isn't just our goal—it's our obsession.
-            </p>
-          </div>
-        </div>
-
         {/* Team Image Section */}
-        <div className="mt-16">
-          <div className="rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative">
+          <div className=" relative rounded-2xl overflow-hidden shadow-2xl">
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
               alt="Team collaboration at Pravidhi Digital Innovation"
               className="w-full h-125 object-cover"
             />
+            <div className="absolute inset-0 bg-black/15" />
+          </div>
+
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"> */}
+          <div className="absolute top-0 left-0 p-12 space-y-6">
+            <p className="text-primary-200 text-sm font-medium tracking-wide uppercase">
+              // ABOUT PRAVIDHI
+            </p>
+            <Heading level={1} className="text-white leading-tight max-w-2xl">
+              Innovative full-service AI & Marketing Agency for Business Growth
+            </Heading>
           </div>
         </div>
       </Section>
-      <Section padding="hero" className=" ">
-        <div className="">
+      <Section padding="hero">
+        <div>
           {/* Header Section */}
           <div className="text-center mb-12">
             <Heading level={2} className="text-text mb-4">
-              We are the people who make up Pravidhi 
+              We are the people who make up Pravidhi
             </Heading>
             <p className="text-lg text-muted max-w-2xl mx-auto">
               Our philosophy is simple — hire great people and give them the
@@ -137,9 +124,7 @@ const About: React.FC = () => {
                     {member.role}
                   </p>
                   {member.description && (
-                    <p className="text-sm text-muted">
-                      {member.description}
-                    </p>
+                    <p className="text-sm text-muted">{member.description}</p>
                   )}
                 </div>
               </div>

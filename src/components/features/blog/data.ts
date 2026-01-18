@@ -2,7 +2,7 @@ import { Blog } from "./types";
 
 export const TEST_BLOGS: Blog[] = [
   {
-    id: "1",
+    id: 1,
     title: "The Future of Web Development in 2025",
     description:
       "Discover the latest trends in React, Tailwind v4, and the rise of AI-driven development tools.",
@@ -12,7 +12,7 @@ export const TEST_BLOGS: Blog[] = [
     date: "Oct 24, 2024",
   },
   {
-    id: "2",
+    id: 2,
     title: "Mastering Tailwind CSS v4",
     description:
       "Learn how to leverage the new CSS-first configuration and high-performance engine of Tailwind v4.",
@@ -22,7 +22,7 @@ export const TEST_BLOGS: Blog[] = [
     date: "Nov 12, 2024",
   },
   {
-    id: "3",
+    id: 3,
     title: "Building Scalable React Apps",
     description:
       "A deep dive into architecture, folder structures, and state management for enterprise-grade projects.",
@@ -32,7 +32,7 @@ export const TEST_BLOGS: Blog[] = [
     date: "Dec 05, 2024",
   },
   {
-    id: "4",
+    id: 4,
     title: "UI/UX Principles for Developers",
     description:
       "Don't just code; design. Learn the fundamental principles that make an interface feel intuitive and premium.",
@@ -42,7 +42,7 @@ export const TEST_BLOGS: Blog[] = [
     date: "Dec 12, 2024",
   },
   {
-    id: "5",
+    id: 5,
     title: "Optimizing Vite Builds",
     description:
       "Speed up your development workflow and production builds with these advanced Vite configuration tips.",

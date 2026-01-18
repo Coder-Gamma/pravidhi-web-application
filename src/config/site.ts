@@ -17,8 +17,8 @@ export const navLinks = [
     href: "/about",
   },
   {
-    name: "Contact",
-    href: "/contact",
+    name: "Internship",
+    href: "/internship",
   },
 ];
 

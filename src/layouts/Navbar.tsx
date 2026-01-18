@@ -5,6 +5,7 @@ import Logo from "../assets/Pravidhi-logo.webp";
 import { Container } from "../components/UI/Container";
 import { cn } from "../lib/utils";
 import { navLinks } from "../config/site";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,13 +49,14 @@ export const Navbar = () => {
           {/* DESKTOP LINKS  */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link
+              <NavLink
                 key={link.name}
                 to={link.href}
-                className="text-sm font-medium text-text transition-colors hover:text-primary"
+                // className="text-sm font-medium text-text transition-colors hover:text-primary"
+                className={({ isActive }) => isActive ?"text-primary text-sm font-medium ":"text-text text-sm font-medium hover:text-primary" }
               >
                 {link.name}
-              </Link>
+              </NavLink>
             ))}
             {/* <Button onClick={} size="sm" className="ml-4">
               Get in Touch
