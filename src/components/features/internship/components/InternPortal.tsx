@@ -1,5 +1,7 @@
 import { Heading } from "@/components/UI/Heading";
 import { Section } from "@/components/UI/Section";
+import InternshipCard from "./InternshipCard";
+import { internships } from "../data/internships";
 
 const InternPortal = () => {
   return (
@@ -27,6 +29,21 @@ const InternPortal = () => {
               experience from skilled mentors at Pravidhi Digital.
             </p>
           </div>
+        </div>
+      </Section>
+      {/* CARDS */}
+      <Section padding="hero">
+        <Heading
+          level={3}
+          className="max-w-2xl mx-auto flex justify-center items-center text-center"
+        >
+          Here's a list of Internship Opportunities at Pravidhi Digial
+        </Heading>
+
+        <div className="grid gap-8 px-6 py-12  md:grid-cols-2 lg:grid-cols-3">
+          {internships.map((internship) => (
+            <InternshipCard key={internship.id} internship={internship} />
+          ))}
         </div>
       </Section>
     </>

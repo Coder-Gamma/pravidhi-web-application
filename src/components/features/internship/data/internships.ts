@@ -17,4 +17,12 @@ export const internships: Internship[] = [
     available: 4,
     total: 8,
   },
+   {
+    id: 3,
+    title: "Machine Learning",
+    description: "Build APIs, databases, and scalable server logic.",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    available: 0,
+    total: 3,
+  },
 ];
