@@ -79,7 +79,7 @@ const About: React.FC = () => {
           </div>
 
           {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"> */}
-          <div className="absolute top-0 left-0 p-12 space-y-6">
+          <div className="absolute top-0 left-0 p-4 md:p-12 space-y-2 md:space-y-6">
             <p className="text-primary-200 text-sm font-medium tracking-wide uppercase">
               // ABOUT PRAVIDHI
             </p>

@@ -15,7 +15,7 @@ const InternPortal = () => {
           <div className="inset-0 absolute bg-black/25" />
 
           {/* TEXT */}
-          <div className="absolute inset-0 flex flex-col gap-6 text-white p-12">
+          <div className="absolute inset-0 flex flex-col  gap-4 md:gap-6 text-white p-4 md:p-12">
             <p className="text-primary-200 text-sm font-medium tracking-wide uppercase">
               // INTERNSHIP Opportunities
             </p>
