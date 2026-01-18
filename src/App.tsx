@@ -5,11 +5,13 @@ import { RootLayout } from "./layouts/RootLayout";
 import About from "./components/features/about/components/About";
 import Contact from "./components/features/contact/components/Contact";
 import ServicesPage from "./pages/ServicesPage";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
         <RootLayout>
           <Routes>
             <Route path="/" element={<Home />} />
